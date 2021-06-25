@@ -1,7 +1,7 @@
 // 06-objects/03-keys-values/script.js - 6.3: keys & values
 
 
-(() => {
+document.getElementById("run").addEventListener("click", () => {
     const person = {
         lastname: "Delnatte",
         firstname: "Pierre-Antoine",
@@ -11,4 +11,7 @@
         status: "married",
     };
     // your code here
+
+    console.log(Object.keys(person));
+    console.log(Object.values(person));
 })();

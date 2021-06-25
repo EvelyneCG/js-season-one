@@ -1,7 +1,7 @@
 // 05-arrays/10-reduce-array/script.js - 5.10: using reducer
 
 
-(() => {
+document.getElementById("run").addEventListener("click", () => {
 
     let people = [
         {
@@ -82,5 +82,11 @@
     ];
 
     // your code here
+
+let reducer = people.reduce((acc, cur) => {
+    return {age: acc.age + cur.age};
+})
+    console.log(reducer); 
+
 
 })();

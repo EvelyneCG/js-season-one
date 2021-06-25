@@ -1,6 +1,6 @@
 // 05-arrays/06-find-in-array/script.js - 5.6: find in the array
 
-(() => {
+document.getElementById("run").addEventListener("click", () => {
 
     let people = [
         {
@@ -81,5 +81,12 @@
     ];
 
     // your code here
+    
+    let ind = people.findIndex(people => (people.firstname == 'Jean') && (people.lastname == 'Dupont'));
+    people.forEach(function(people) {
+        if (people.lastname == 'Dupont' && people.firstname == 'Jean') {
+            console.log(people.email + ' ' + ind);
+        }
+    })
 
 })();

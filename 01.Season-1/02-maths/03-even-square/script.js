@@ -8,6 +8,21 @@
 
         // your code here
 
+    function square(){
+        let n = 21 ;
+        let msg = "";
+        let result = "0";
+
+        for(let x = 1; x<=n; x++)
+        {
+            result = x * x;
+            msg = msg + " " + x + " * " + x + " = " + result + "\n";
+        }
+
+        alert (msg);
+    }
+    square();
+
     });
 
 })();

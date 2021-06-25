@@ -1,6 +1,6 @@
 // 05-arrays/01-get-element/script.js - 5.1: item in array
 
-(() => {
+document.getElementById("run").addEventListener("click", () => {
 
     let fruits = [
         "apple",
@@ -19,4 +19,6 @@
 
     // your code here
 
-})();
+console.log(fruits[3]);
+
+})

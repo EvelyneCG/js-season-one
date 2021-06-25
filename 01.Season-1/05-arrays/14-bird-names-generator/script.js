@@ -1,7 +1,6 @@
 // 05-arrays/14-bird-names-generator/script.js - 5.14: Bird names generator in French
 
-
-(() => {
+document.getElementById("run").addEventListener("click", () => {
     const birds = [
         {name: "mouette", fem: true},
         {name: "corbeau"},
@@ -31,4 +30,7 @@
     ]);
 
     // your code here
+
+    
+    
 })();

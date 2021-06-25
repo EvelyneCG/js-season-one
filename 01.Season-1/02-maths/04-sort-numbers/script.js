@@ -8,6 +8,21 @@
 
         // your code here
 
+        let array = [];
+        let nbre = document.getElementById("numbers").value;
+        let split = nbre.split(",");
+        for (let nbre of split) {
+array.push(Number(nbre)) }
+array.sort( function( a , b){
+    if(a > b) return 1;
+    if(a < b) return -1;
+    return 0;
+
+});
+
+alert (array);
+
+
     });
 
 })();

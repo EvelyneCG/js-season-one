@@ -8,4 +8,13 @@
 
     // your code here
 
+var today = new Date()
+var curHr = today.getHours()
+
+if (curHr < 18) {
+  document.getElementById("target").innerHTML ="Hello"
+} else {
+  document.getElementById("target").innerHTML ="Good evening"
+}
+
 })();

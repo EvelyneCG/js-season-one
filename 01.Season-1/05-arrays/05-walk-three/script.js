@@ -1,7 +1,7 @@
 // 05-arrays/05-walk-three/script.js - 5.5: walk through the list (3)
 
 
-(() => {
+document.getElementById("run").addEventListener("click", () => {
 
     let people = [
         {
@@ -32,5 +32,8 @@
     ];
 
     // your code here
+
+
+people.forEach(people => console.log(people.firstname + " " + people.lastname));
 
 })();

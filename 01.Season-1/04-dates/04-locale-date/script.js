@@ -8,4 +8,20 @@
 
     // your code here
 
+    let days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+    let months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+
+    let date = new Date;
+    let day = days[date.getDay()];
+    let dayT = date.getDate();
+    let month = months[date.getMonth()];
+    let year = date.getFullYear();
+    let hour = date.getHours();
+    let min = date.getMinutes();
+    let dateTotal = (day + ' ' + dayT + ' ' + month + ' ' + year + ',' + hour + 'h' + min);
+    document.getElementById("target").innerHTML = dateTotal
+
+//document.getElementById("target").innerHTML = today
+
+
 })();
