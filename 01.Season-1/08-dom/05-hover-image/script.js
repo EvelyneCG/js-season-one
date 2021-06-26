@@ -4,5 +4,14 @@
 (() => {
 
     // your code here
+document.getElementById("data-hover").addEventListener("mouseover", mouseOver);
+document.getElementById("src").addEventListener("mouseout", mouseOut);
 
+function mouseOver() {
+  this.src = '../../_shared/img/kiss-wink-heart.svg';
+}
+
+function mouseOut() {
+    this.src = '../../_shared/img/kiss.svg';
+}
 })();

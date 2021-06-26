@@ -5,4 +5,9 @@
 
     // your code here
 
+    var Damn = document.getElementsByClassName("target");
+
+    for (var i = 0; i < Damn.length; i++) {
+      Damn[i].innerHTML = "Owned!";
+      }
 })();
