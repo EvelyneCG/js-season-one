@@ -1,7 +1,7 @@
 // 08-dom/06-mini-carousel/script.js - 8.6: mini carousel
 
 
-(() => {
+document.getElementById("next").addEventListener("click", () => {
 
     let gallery= [
         "../../_shared/img/bell.svg",
@@ -12,5 +12,20 @@
     ];
 
     // your code here
+
+    let currentSlideIndex = 0;
+
+    function displaySlide() {
+        var file = gallery[ currentSlideIndex ];
+        document.getElementById("img").src = gallery;
+    }
+
+    currentSlideIndex++;
+    if( currentSlideIndex >= gallery.length ) {
+        currentSlideIndex = 0;
+    }
+displaySlide();
+
+
 
 })();
